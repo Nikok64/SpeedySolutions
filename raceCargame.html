@@ -1,0 +1,64 @@
+<html>
+<head>
+  <style>
+  body{
+    margin:0;
+    padding:0;
+
+  }
+  #topWall{
+    position:relative;
+    background-image: url('Citything.png');
+    height:300px;
+    left:0px;
+    top:0px;
+    visibility:visible;
+    background-size:cover;
+    z-index:10;
+    background-position:0px 0px;
+    background-repeat: repeat-x;
+    animation: animate 4s linear infinite;
+  }
+  @keyframes animate {
+      from{
+        background-position: 0px 0px;
+
+      }
+      to{
+        background-position: -1180px 0px;
+        }
+  }
+  #desertButton{
+    position:absolute;
+    left:100px;
+    top:300px;
+  }
+  #cityButton{
+    position:absolute;
+    left:100px;
+    top:340px;
+  }
+  #forestButton{
+    position:absolute;
+    left:100px;
+    top:370px;
+  }
+  #farmButton{
+    position:absolute;
+    left:100px;
+    top:390px;
+  }
+  </style>
+</head>
+<body>
+  <input type="button" onClick="desertFunction()" id="desertButton"value="desert"></input>
+  <input type="button" onClick="cityFunction()" id="cityButton" value="city"></input>
+    <input type="button" onClick="forestFunction()" id="forestButton" value="forest"></input>
+  <input type="button" onClick="farmFunction()" id="farmButton" value="farm"></input>
+<div id="topWall"></div>
+</div>
+
+
+</body>
+</html>
+<script src="raceCarGame.js"></script>
