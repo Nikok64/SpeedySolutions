@@ -174,10 +174,14 @@
   }#playerCar{
     position:absolute;
     left:0px;
+    transform:translateX(0px);
     top:1100px;
     z-index: 900;
     height:90px
-  }#oppCar{
+  }
+
+
+  #oppCar{
     position:absolute;
     left:0px;
     top:1190px;
@@ -229,31 +233,76 @@
   left:1025px;
   top:1275px;
   z-index:90000000001;
+}#questions{
+  position:absolute;
+  left:15px;
+  top:1275px;
+  visibility:visible;
+  z-index:90000000002;
+}#playeranswer{
+  position:absolute;
+  left:1250px;
+  top:1005px;
+  z-index:90000020001;
+  visibility: visible;
+}#introQuestion{
+  position:absolute;
+  left:1120px;
+  top:980px;
+  z-index:100020001;
+  visibility: visible;
 }
-   @keyframes animate {
-        from{
-          background-position: 0px 0px;
 
-        }
-        to{
-          background-position: -1180px 0px;
-          }
+@keyframes animate {
+     from{
+       background-position: 0px 0px;
+
+     }
+     to{
+       background-position: -1180px 0px;
+       }
+
+    }#submitButton{
+      position:absolute;
+      left:1420px;
+      top:1002.8;
+      z-index:1900301;
+      visibility: visible;
+    }#endOfRace{
+      position:absolute;
+      left:300px;
+      top:840;
+      z-index:1;
+      visibility: hidden;
+    }#retry{
+      position:absolute;
+      left:600px;
+      top:1090px;
+      z-index:900;
+      visibility:hidden;
+
     }
   </style>
 </head>
 <body>
+  <input type="button" onClick="retry()" id="retry" value="Retry Race">
   <input type="button" onClick="desertFunction()" id="desertButton"value="desert"></input>
   <input type="button" onClick="cityFunction()" id="cityButton" value="city"></input>
     <input type="button" onClick="forestFunction()" id="forestButton" value="forest"></input>
   <input type="button" onClick="farmFunction()"id="farmButton" value="farm"></input>
   <input type="button" onClick="coastFunction()"id="coastButton" value="coast"></input>
   <input type="button" onClick="mustangSelect()" id="MustangButton" value="Selected">
+  <input type="button" onClick="submit()" id="submitButton" value="Submit">
     <input type="button" onClick="bMWSelect()" id="bmwButton" value="BMW">
       <input type="button" onClick="chevroletSelect()" id="chevroletButton" value="Chevrolet">
         <input type="button" onClick="chargerSelect()" id="chargerButton" value="Dodge Charger">
           <input type="button" onClick="lamboSelect()" id="lamboButton" value="Lamborghini">
             <input type="button" onClick="bugattiSelect()" id="BugattiButton" value="Bugatti">
+            <img id="endOfRace" src="FarmVictoryScreen.png">
+<input type="button" id="introQuestion" value="Enter the CAPITAL letter that corresponds to your answer">
+  <input type="text" name="playeranswer" id="playeranswer" >
   <img src="Hub.png" id="hubImage">
+
   <img src="DesertBackground.png" id="raceBackground">
   <img src="Mustang (1).png" id="playerCar">
   <img src="BMW.png" id="oppCar">
@@ -262,11 +311,7 @@
   </div>
   <div id="road">
   </div>
-<img id="imageforquestion" src="imgStartBackground.png">
-<img id="question" src="questionStartBackground.png">
-<img id="posAnswer" src="answersStartBackground.png">
-<div id="start">
-</div>
+<img id="questions" src="PatternsQ1.png" >
 </body>
 </html>
 <script src="raceCarGame.js"></script>
