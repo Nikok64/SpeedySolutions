@@ -281,11 +281,44 @@
       z-index:900;
       visibility:hidden;
 
+    }#nextRace{
+      position:absolute;
+      left:700px;
+      top:1090px;
+      z-index:900;
+      visibility:hidden;
+    }#LockedEgypt{
+      position:absolute;
+      left:-1px;
+      top:160px;
+      z-index:180932490349010123401340091049013904100;
+    }#LockedPlane{
+      position:absolute;
+      left:-1px;
+      top:300px;
+      z-index:180932490349010123401340091049013904100;
+    }#LockedGrowth{
+      position:absolute;
+      left:-1px;
+      top:445px;
+      z-index:180932490349010123401340091049013904100;
+    }#LockedCity{
+      position:absolute;
+      left:-1px;
+      top:590px;
+      z-index:180932490349010123401340091049013904100;
     }
+
   </style>
 </head>
 <body>
+
+      <img id="LockedEgypt" src="Locked.png">
+    <img id="LockedPlane" src="Locked.png">
+    <img id="LockedGrowth" src="Locked.png">
+    <img id="LockedCity" src="Locked.png">
   <input type="button" onClick="retry()" id="retry" value="Retry Race">
+    <input type="button" onClick="nextRace()" id="nextRace" value="Next Race">
   <input type="button" onClick="desertFunction()" id="desertButton"value="desert"></input>
   <input type="button" onClick="cityFunction()" id="cityButton" value="city"></input>
     <input type="button" onClick="forestFunction()" id="forestButton" value="forest"></input>
