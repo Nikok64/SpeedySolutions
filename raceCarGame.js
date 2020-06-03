@@ -2,11 +2,11 @@ var scrollTop = window.pageYOffset;
 var scrollLeft= window.pageXOffset;
 var scrollLockvar = true;
 var pass;
-alert("Welcome to Speedy Solutions, the racing tournament of Integrated Math.");
-alert("This race is a tournament that tests your ability in all 5 units of this math class.");
-alert("Compete in all of these races, and fight against the sloth lord.");
-alert("At the end if you finish, you will get a special prize, so get to racing.");
-alert("Pick a car of your choice, and then jump into the race, you can change your car between, but not during a race. Good Luck");
+// alert("Welcome to Speedy Solutions, the racing tournament of Integrated Math.");
+// alert("This race is a tournament that tests your ability in all 5 units of this math class.");
+// alert("Compete in all of these races, and fight against the sloth lord.");
+// alert("At the end if you finish, you will get a special prize, so get to racing.");
+// alert("Pick a car of your choice, and then jump into the race, you can change your car between, but not during a race. Good Luck");
  window.onscroll= function(){
    if(scrollLockvar===true){
    window.scrollTo(0,0);
