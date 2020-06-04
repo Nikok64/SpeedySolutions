@@ -72,7 +72,7 @@ function desertFunction(){
     imageSelect=imageSelectDesert;
     document.getElementById("nextRace").style.visibility="hidden";
  document.getElementById("endOfRace").style.visibility="hidden";
-   window.scrollTo(0,820);
+    window.scrollTo(0,1000);
       document.getElementById("retry").style.visibility="hidden";
       document.getElementById("topWall").style.backgroundImage="url('desert.png')";
       document.getElementById("topWall").style.visibility="visible";
@@ -106,7 +106,7 @@ function cityFunction(){
   defeatScreen="CityDefeatScreen.png";
      document.getElementById("nextRace").style.visibility="hidden";
   document.getElementById("endOfRace").style.visibility="hidden";
-    window.scrollTo(0,820);
+      window.scrollTo(0,1000);
        document.getElementById("retry").style.visibility="hidden";
     answerToQuestion=answerToQuestionDown;
     imageSelect=imageSelectDown;
@@ -116,10 +116,10 @@ function cityFunction(){
       document.getElementById("raceBackground").src="DowntownBackground.png";
         document.getElementById("road").style.backgroundImage="url('RoadToMove.png')";
         document.getElementById("endOfRace").src="FarmVictoryScreen.png";
-        document.getElementById("playerCar").style.left="0px";
-        document.getElementById("oppCar").style.left="0px";
-        document.getElementById("oppCar").style.transform="translateX(0px)";
-        document.getElementById("playerCar").style.transform="translateX(0px)";
+        document.getElementById("playerCar").style.left="0%";
+        document.getElementById("oppCar").style.left="0%";
+        document.getElementById("oppCar").style.transform="translateX(0%)";
+        document.getElementById("playerCar").style.transform="translateX(0%)";
 
                       alert("You will see an input bar on the right that you can input your answer.");
                                  alert("remember not to have ANY spaces in your answer! this will throw off the system");
@@ -143,7 +143,7 @@ function forestFunction(){
   defeatScreen="ForestDefeatScreen.png";
      document.getElementById("nextRace").style.visibility="hidden";
   document.getElementById("endOfRace").style.visibility="hidden";
-    window.scrollTo(0,820);
+    window.scrollTo(0,1000);
        document.getElementById("retry").style.visibility="hidden";
     answerToQuestion=answerToQuestionGrowth;
     imageSelect=imageSelectForest;
@@ -153,10 +153,10 @@ function forestFunction(){
       document.getElementById("raceBackground").src="ForestBackground.png";
         document.getElementById("road").style.backgroundImage="url('ForestRoad (1).png')";
         document.getElementById("endOfRace").src="FarmVictoryScreen.png";
-        document.getElementById("playerCar").style.left="0px";
-        document.getElementById("oppCar").style.left="0px";
-        document.getElementById("oppCar").style.transform="translateX(0px)";
-        document.getElementById("playerCar").style.transform="translateX(0px)";
+        document.getElementById("playerCar").style.left="0%";
+        document.getElementById("oppCar").style.left="0%";
+        document.getElementById("oppCar").style.transform="translateX(0%)";
+        document.getElementById("playerCar").style.transform="translateX(0%)";
 
 
                       alert("You will see an input bar on the right that you can input your answer.");
@@ -183,7 +183,7 @@ function farmFunction(){
   oppCorrect=0;
   increment=0;
   questionNumber=0;
-    window.scrollTo(0,820);
+    window.scrollTo(0,1000);
     answerToQuestion=answerToQuestionFarm;
        document.getElementById("retry").style.visibility="hidden";
       document.getElementById("endOfRace").style.visibility="hidden";
@@ -194,10 +194,10 @@ function farmFunction(){
       document.getElementById("raceBackground").src="FarmBackground.png";
         document.getElementById("road").style.backgroundImage="url('FarmToMove.png')";
         document.getElementById("endOfRace").src="FarmVictoryScreen.png";
-        document.getElementById("playerCar").style.left="0px";
-        document.getElementById("oppCar").style.left="0px";
-        document.getElementById("oppCar").style.transform="translateX(0px)";
-        document.getElementById("playerCar").style.transform="translateX(0px)";
+        document.getElementById("playerCar").style.left="0%";
+        document.getElementById("oppCar").style.left="0%";
+        document.getElementById("oppCar").style.transform="translateX(0%)";
+        document.getElementById("playerCar").style.transform="translateX(0%)";
 
 
 
@@ -222,7 +222,7 @@ function coastFunction(){
   oppCorrect=0;
   increment=0;
   questionNumber=0;
-    window.scrollTo(0,820);
+    window.scrollTo(0,1000);
     answerToQuestion=answerToQuestionPlane;
     document.getElementById("playeranswer").style.visibility="visible";
     document.getElementById("submitButton").style.visibility="visible";
@@ -237,10 +237,10 @@ function coastFunction(){
       document.getElementById("raceBackground").src="CoastalBackground.png";
         document.getElementById("road").style.backgroundImage="url('CoastalRoad.png')";
         document.getElementById("endOfRace").src="FarmVictoryScreen.png";
-        document.getElementById("playerCar").style.left="0px";
-        document.getElementById("oppCar").style.left="0px";
-        document.getElementById("oppCar").style.transform="translateX(0px)";
-        document.getElementById("playerCar").style.transform="translateX(0px)";
+        document.getElementById("playerCar").style.left="0%";
+        document.getElementById("oppCar").style.left="0%";
+        document.getElementById("oppCar").style.transform="translateX(0%)";
+        document.getElementById("playerCar").style.transform="translateX(0%)";
 
 
 
@@ -402,7 +402,7 @@ function submit(){
     document.getElementById("playeranswer").focus();
     increment ++;
     document.getElementById("introQuestion").value=congrats[increment];
-    translateInc=playerCorrect*160;
+    translateInc=playerCorrect*140;
      translateIncer="translateX("+translateInc+"px)";
     document.getElementById("playerCar").style.transform=translateIncer;
 
@@ -411,7 +411,7 @@ function submit(){
   document.getElementById("introQuestion").value=sorry[increment];
     document.getElementById("questions").src=imageSelect[1+increment];
       increment ++;
-      translateInc=oppCorrect*160;
+      translateInc=oppCorrect*140;
        translateIncer="translateX("+translateInc+"px)";
       document.getElementById("oppCar").style.transform=translateIncer;
 
