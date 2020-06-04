@@ -393,8 +393,6 @@ function submit(){
      document.getElementById("questions").style.visibility="hidden";
      document.getElementById("retry").style.visibility="visible";
      document.getElementById("nextRace").style.visibility="visible";
-     scrollLockvar=true;
-     pass=false;
    }
    }else{
   if(a==answerToQuestion[increment]){
