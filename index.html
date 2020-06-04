@@ -132,7 +132,7 @@
   #hubImage{
     visibility: visible;
     height:100%;
-    width:100%
+    width:100%;
   }
   #desertButton{
     position:absolute;
@@ -162,6 +162,8 @@
     position:absolute;
     left:0%;
     top:100%;
+    height:100%;
+    width:100%;
   }#road{
     position:relative;
     background-image: url('DesertRoad.png');
@@ -228,7 +230,7 @@
   z-index:90000000002;
 }#playeranswer{
   position:absolute;
-  left:78%;
+  left:75%;
   top:136%;
   z-index:90000020001;
   visibility: visible;
@@ -294,11 +296,16 @@
       left:0%;
       top:80%;
       z-index:180932490349010123401340091049013904100;
+    }#chromebook{
+      position:absolute;
+      left:24%;
+      top:5%;
+      z-index:180932490349010123401340091049013904100;
     }
   </style>
 </head>
 <body>
-
+    <input id="chromebook" type="button" onClick="chromebookFunction()" value="I'm on Chromebook">
       <img id="LockedEgypt" src="Locked.png">
     <img id="LockedPlane" src="Locked.png">
     <img id="LockedGrowth" src="Locked.png">

@@ -2,7 +2,9 @@ var scrollTop = window.pageYOffset;
 var scrollLeft= window.pageXOffset;
 var scrollLockvar = true;
 var pass;
-
+function chromebookFunction(){
+  document.body.style.transform="scale(0.9)";
+}
  alert("Welcome to Speedy Solutions, the racing tournament of Integrated Math.");
  alert("This race is a tournament that tests your ability in all 5 units of this math class.");
  alert("Compete in all of these races, and fight against the sloth lord.");
