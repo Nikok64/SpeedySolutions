@@ -368,7 +368,7 @@ function submit(){
   questionNumber++;
     document.getElementById("playeranswer").focus();
    a = document.getElementById("playeranswer").value;
-   changedAnswer=a.split(' ').join().upper();
+   changedAnswer=a.toUpperCase();
    if(questionNumber==11){
       if(playerCorrect>oppCorrect){
         if(lastRace===true){
