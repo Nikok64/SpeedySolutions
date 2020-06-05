@@ -2,7 +2,7 @@ var scrollTop = window.pageYOffset;
 var scrollLeft= window.pageXOffset;
 var scrollLockvar = true;
 var pass;
-
+var lastRace=false;
  alert("Welcome to Speedy Solutions, the racing tournament of Integrated Math.");
  alert("This race is a tournament that tests your ability in all 5 units of this math class.");
  alert("Compete in all of these races, and fight against the sloth lord.");
@@ -91,8 +91,9 @@ function desertFunction(){
            document.getElementById("introQuestion").style.visibility="visible";
            document.getElementById("questions").style.visibility='visible';
 }
-function cityFunction(){
 
+function cityFunction(){
+    lastRace=true;
     scrollLockvar=false;
   playerCorrect=0;
   oppCorrect=0;
@@ -368,6 +369,22 @@ function submit(){
    a = document.getElementById("playeranswer").value;
    if(questionNumber==11){
       if(playerCorrect>oppCorrect){
+        if(lastRace===true){
+          document.getElementById("road").style.animation="animation: animate 17s linear infinite";
+          document.getElementById("topWall").style.animation="  animation: animate 18s linear infinite";
+          document.getElementById("endOfRace").style.visibility="visible";
+          document.getElementById("endOfRace").src=victoryScreen;
+          document.getElementById("endOfRace").style.height="80%";
+          document.getElementById("endOfRace").style.zIndex="99999999999999999999";
+          document.getElementById("introQuestion").style.visibility="hidden";
+          document.getElementById("playeranswer").style.visibility="hidden";
+          document.getElementById("submitButton").style.visibility="hidden";
+          document.getElementById("questions").style.visibility="hidden";
+          document.getElementById("retry").style.visibility="hidden";
+          document.getElementById("nextRace").style.visibility="hidden";
+          alert("Congradulations!!!. You beat the sloth lord, you are probably tired of math, so go play some real videogames now.");
+        }else{
+          alert("hello");
      document.getElementById("road").style.animation="animation: animate 17s linear infinite";
      document.getElementById("topWall").style.animation="  animation: animate 18s linear infinite";
      document.getElementById("endOfRace").style.visibility="visible";
@@ -380,8 +397,22 @@ function submit(){
      document.getElementById("retry").style.visibility="visible";
      document.getElementById("nextRace").style.visibility="visible";
        scrollLockvar=true;
-       pass=true;
+
+     }
    }else{
+     if(lastRace===true){
+       document.getElementById("road").style.animation="animation: animate 17s linear infinite";
+       document.getElementById("topWall").style.animation="  animation: animate 18s linear infinite";
+       document.getElementById("endOfRace").style.visibility="visible";
+       document.getElementById("endOfRace").src=defeatScreen;
+       document.getElementById("endOfRace").style.zIndex="99999999999999999999";
+       document.getElementById("introQuestion").style.visibility="hidden";
+       document.getElementById("playeranswer").style.visibility="hidden";
+       document.getElementById("submitButton").style.visibility="hidden";
+       document.getElementById("questions").style.visibility="hidden";
+       document.getElementById("retry").style.visibility="visible";
+       document.getElementById("nextRace").style.visibility="hidden";
+     }
      document.getElementById("road").style.animation="animation: animate 17s linear infinite";
      document.getElementById("topWall").style.animation="  animation: animate 18s linear infinite";
      document.getElementById("endOfRace").style.visibility="visible";
@@ -394,6 +425,7 @@ function submit(){
      document.getElementById("retry").style.visibility="visible";
      document.getElementById("nextRace").style.visibility="visible";
    }
+
    }else{
   if(a==answerToQuestion[increment]){
 
