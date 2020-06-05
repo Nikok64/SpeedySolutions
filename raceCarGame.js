@@ -2,6 +2,7 @@ var scrollTop = window.pageYOffset;
 var scrollLeft= window.pageXOffset;
 var scrollLockvar = true;
 var pass;
+var changedAnswer;
 var lastRace=false;
  alert("Welcome to Speedy Solutions, the racing tournament of Integrated Math.");
  alert("This race is a tournament that tests your ability in all 5 units of this math class.");
@@ -367,6 +368,7 @@ function submit(){
   questionNumber++;
     document.getElementById("playeranswer").focus();
    a = document.getElementById("playeranswer").value;
+   changedAnswer=a.split(' ').join().upper();
    if(questionNumber==11){
       if(playerCorrect>oppCorrect){
         if(lastRace===true){
@@ -382,7 +384,7 @@ function submit(){
           document.getElementById("questions").style.visibility="hidden";
           document.getElementById("retry").style.visibility="hidden";
           document.getElementById("nextRace").style.visibility="hidden";
-          alert("Congradulations!!!. You beat the sloth lord, you are probably tired of math, so go play some real videogames now.");
+          alert("Congratulations!!!. You beat the sloth lord, you are probably tired of math, so go play some real videogames now.");
         }else{
           alert("hello");
      document.getElementById("road").style.animation="animation: animate 17s linear infinite";
@@ -427,7 +429,7 @@ function submit(){
    }
 
    }else{
-  if(a==answerToQuestion[increment]){
+ if(changedAnswer==answerToQuestion[increment]){
 
     playerCorrect++;
     document.getElementById("questions").src=imageSelect[1+increment];
