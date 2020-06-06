@@ -386,7 +386,6 @@ function submit(){
           document.getElementById("nextRace").style.visibility="hidden";
           alert("Congratulations!!!. You beat the sloth lord, you are probably tired of math, so go play some real videogames now.");
         }else{
-          alert("hello");
      document.getElementById("road").style.animation="animation: animate 17s linear infinite";
      document.getElementById("topWall").style.animation="  animation: animate 18s linear infinite";
      document.getElementById("endOfRace").style.visibility="visible";
