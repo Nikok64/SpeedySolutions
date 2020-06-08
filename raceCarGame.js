@@ -384,6 +384,7 @@ function submit(){
           document.getElementById("questions").style.visibility="hidden";
           document.getElementById("retry").style.visibility="hidden";
           document.getElementById("nextRace").style.visibility="hidden";
+          pass=true;
           alert("Congratulations!!!. You beat the sloth lord, you are probably tired of math, so go play some real videogames now.");
         }else{
      document.getElementById("road").style.animation="animation: animate 17s linear infinite";
@@ -398,6 +399,7 @@ function submit(){
      document.getElementById("retry").style.visibility="visible";
      document.getElementById("nextRace").style.visibility="visible";
        scrollLockvar=true;
+       pass=true;
 
      }
    }else{
