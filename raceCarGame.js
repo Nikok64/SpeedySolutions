@@ -42,7 +42,7 @@ var imageSelect;
 var victoryScreen;
 var defeatScreen;
 var answerToQuestionFarm=["A","C","C","D","D","D","D","C","C","A"];
-var answerToQuestionDesert=['C','A','D',"C",'D','C','C','C','E'];
+var answerToQuestionDesert=['C','A','D',"C",'D','C','C','C','E','E'];
 var answerToQuestionDown=['E','B','A','B','A','A','C','B','B','B'];
 var answerToQuestionGrowth=['A','C','D','A','D','C','A','A','B','A'];
 var answerToQuestionPlane=['B','B','A','E','A','D','C','B','B','B'];
